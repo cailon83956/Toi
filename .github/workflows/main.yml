@@ -32,9 +32,9 @@ jobs:
 
       - name: Start SSH tunnel
         run: |
-          ngrok tcp 22 --region sg --log=stdout &
+          ngrok tcp 22 --region ap --log=stdout &
           sleep 10
-          
+      
       - name: Keep alive
         run: |
           echo "SSH READY"
